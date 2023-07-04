@@ -1,0 +1,36 @@
+//Encuentro 8. Ejercicio 2
+
+Algoritmo numMaxMinProm
+	Definir  num, numMax, numMin, suma, contador Como Entero
+	Definir band Como Logico
+	numMax = 0
+	numMin = 0
+	suma = 0
+	contador = 0
+	band = verdadero
+	Repetir
+		Escribir "Ingrese un número"
+		Leer num
+		Si band = verdadero Entonces
+			numMax = num
+			numMin = num
+			band = falso
+		SiNo
+			Si num > numMax Entonces
+				numMax= num
+			SiNo
+				Si num <> 0 Y num < numMax Entonces  // <> de 0 a criterio mío, sino el número menor siempre va a ser cero porque hay que ingresarlo al final
+					numMin = num
+				Fin Si
+			Fin Si
+		Fin Si
+		
+		suma = suma + num
+		contador = contador + 1
+	Mientras Que num <> 0
+	
+	Escribir "El número Máximo es ", numMax
+	Escribir "El número Mínimo es ", numMin
+	Escribir "El promedio es ", suma/(contador-1)
+	
+FinAlgoritmo

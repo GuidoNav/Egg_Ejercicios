@@ -1,0 +1,20 @@
+//Encuentro 8. Ejercicio 6
+
+Algoritmo sumPrimNumPares
+	Definir x, sumaPar, ncantidad, contador Como Entero
+	x = 1
+	sumapar = 0
+	contador = 0
+	Escribir "Ingrese la cantidad de los primeros números pares que desee sumar"
+	Leer ncantidad
+	Repetir
+		Si x MOD 2 = 0 Entonces
+			Escribir x
+			sumaPar = sumaPar + x
+			contador = contador + 1
+		Fin Si
+		x = x + 1
+	Mientras Que contador < ncantidad
+	Escribir "La suma de los ",ncantidad, " primeros números pares es de: ",sumaPar
+	
+FinAlgoritmo

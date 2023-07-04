@@ -1,0 +1,21 @@
+//Encuentro 8. Ejercicio 7
+
+Algoritmo juegoNumAleat
+	Definir nAleatorio, num Como Entero
+	nAleatorio = azar(9) + 1
+	
+	Escribir "Ingresa un número del 1 al 10"
+	Repetir
+		Leer num
+		Si num = nAleatorio Entonces
+			Escribir "¡Felicidades. Ha acertado al número!"
+		SiNo
+			Si nAleatorio < num Entonces
+				Escribir "Fallaste. El número secreto es MENOR al que ingresaste"
+			SiNo
+				Escribir "Fallaste. El número secreto es MAYOR al que ingresaste"
+			Fin Si
+			Escribir "Inténtalo de nuevo"
+		Fin Si
+	Mientras Que num <> nAleatorio
+FinAlgoritmo
